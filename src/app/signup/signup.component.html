@@ -1,0 +1,70 @@
+<div class="container-fluid abc">
+  <div class="row">
+    <div class="col-sm-6" style="color: white">
+        <h2 class="h1 h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up right
+            now! </h2>
+            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+            <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat!
+                Commodi sequi
+                non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</h6>
+              <br>
+              <a mdbBtn color="white" outline="true" class="wow fadeInLeft waves-light" data-wow-delay="0.3s"
+                    mdbWavesEffect>Learn more</a>
+    </div>
+    <div class="col-sm-6">
+      <!--Form-->
+      <mdb-card class="wow fadeInRight" data-wow-delay="0.3s">
+          <mdb-card-body>
+            <!--Header-->
+            <div class="text-center">
+              <h3 class="white-text">
+                <mdb-icon fas icon="user" class="text-white"></mdb-icon> Register:</h3>
+              <hr class="hr-light">
+            </div>
+            <!--Body-->
+            <form [formGroup]="regform" (ngSubmit)="Save(regform.value)" role="form">
+            <div class="md-form form-group">
+              <mdb-icon fas icon="user" class="text-white active"></mdb-icon>
+              <input type="text" id="name" formControlName='name' name='name' class="text-white form-control" mdbInput>
+              <label for="form3" class="text-white">Your name</label>
+            </div>
+            <div class="md-form form-group">
+              <mdb-icon fas icon="envelope" class="text-white active"></mdb-icon>
+              <input type="email" id="email" formControlName='email' name='email'class="text-white form-control" mdbInput>
+              <label for="form2" class="text-white">Your email</label>
+            </div>
+            <div class="md-form form-group">
+              <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+              <input type="text" id="address" formControlName='address' name='address'class="text-white form-control" mdbInput>
+              <label for="form4" class="text-white">Your address</label>
+            </div>
+            <div class="md-form form-group">
+                <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+                <input type="password" id="mobile" formControlName='mobile' name='mobile' class="text-white form-control" mdbInput>
+                <label for="form4" class="text-white">Your mobile</label>
+              </div>
+            <div class="md-form form-group">
+              <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+              <input type="password" id="password" formControlName='password' name='password' class="text-white form-control" mdbInput>
+              <label for="form4" class="text-white">Your password</label>
+            </div>
+            <div class="md-form form-group">
+                <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+                <input type="password" id="confirm" formControlName='confirm' name='confirm' class="text-white form-control" mdbInput>
+                <label for="form4" class="text-white">Confirm password</label>
+              </div>
+             
+            <div class="text-center mt-4">
+              <button mdbBtn color="indigo" mdbWavesEffect type="Submit">Sign up</button>
+              <hr class="hr-light mb-3 mt-4">
+             
+            </div>
+            </form>
+          </mdb-card-body>
+        </mdb-card>
+        <!--/.Form-->
+    </div>
+  </div>
+</div>

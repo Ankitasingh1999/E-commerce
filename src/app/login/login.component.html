@@ -1,0 +1,42 @@
+<div class="container-fluid abc">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <!--Form-->
+        <mdb-card class="wow fadeInRight" data-wow-delay="0.3s" style="padding-bottom: 27%">
+            <mdb-card-body >
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="white-text">
+                  <mdb-icon fas icon="user" class="text-white"></mdb-icon> Login:</h3>
+                <hr class="hr-light">
+              </div>
+              <!--Body-->
+              <form [formGroup]="regform" (ngSubmit)="Save(regform.value)" role="form">
+              <div class="md-form form-group">
+                <mdb-icon fas icon="user" class="text-white active"></mdb-icon>
+                <input type="text" id="name" formControlName='name' name='name' class="text-white form-control" mdbInput>
+                <label for="form3" class="text-white">Your username</label>
+              </div>
+              <div class="md-form form-group">
+                <mdb-icon fas icon="envelope" class="text-white active"></mdb-icon>
+                <input type="email" id="email" formControlName='email' name='email'class="text-white form-control" mdbInput>
+                <label for="form2" class="text-white">Your email</label>
+              </div>
+             
+             
+             
+               
+              <div class="text-center" style="padding-top: 20%">
+                <button mdbBtn color="indigo" mdbWavesEffect type="Submit">Sign In</button>
+                <hr class="hr-light mb-3 mt-4">
+               
+              </div>
+              </form>
+            </mdb-card-body>
+          </mdb-card>
+          <!--/.Form-->
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
